@@ -1,316 +1,179 @@
-Skip to content
-ifuriouscoder
-Amazon-Sales
-Repository navigation
-Code
-Issues
-Pull requests
-Agents
-Actions
-Projects
-Security and quality
-Insights
-ifuriouscoder
-Amazon-Sales
-Public
-Go to file
-t
-T
-ifuriouscoder
-ifuriouscoder
-Initial commit
-aded4a5
- · 
-last year
-Name		
-.gitattributes
-Initial commit
-last year
-Amazon Sale Report.csv
-Initial commit
-last year
-Amazon Sales Report.pbix
-Add files via upload
-last year
-Cloud Warehouse Compersion Chart.csv
-Initial commit
-last year
-Expense IIGF.csv
-Initial commit
-last year
-International sale Report.csv
-Initial commit
-last year
-May-2022.csv
-Initial commit
-last year
-P L March 2021.csv
-Initial commit
-last year
-PDFGallery_20250813_000104.pdf
-Add files via upload
-last year
-Plan for a Powerful Power BI Dashboard.docx
-Add files via upload
-last year
-Product_details.xlsx
-Initial commit
-last year
-README.md
-Update README.md
-last year
-Sale Report.csv
-Initial commit
-last year
-mintty.2025-08-13_03-15-39.png
-Initial commit
-last year
-Repository files navigation
-README
-📊 Amazon Sales Report Analysis
+# 📝 Project Overview
 
-📝 Project Overview This project analyzes Amazon sales data to extract meaningful insights that can help in business decision-making, sales trend identification, and customer behavior understanding. The analysis focuses on identifying top-performing products, seasonal demand patterns, and sales growth opportunities.
+This project analyzes **Amazon sales data** to extract meaningful insights that support business decision-making, sales trend identification, and customer behavior understanding. The analysis focuses on identifying **top-performing products**, **seasonal demand patterns**, and **sales growth opportunities**, and packages the findings into an interactive **Power BI dashboard**.
 
-🎯 Objectives Clean and preprocess raw sales data for analysis.
+The workflow covers the full pipeline — from raw data cleaning in Python to visual storytelling in Power BI:
 
-Identify top-selling products and categories.
+```mermaid
+flowchart LR
+    A[Raw Sales Data<br/>CSV / Excel] --> B[Data Cleaning<br/>Pandas & NumPy]
+    B --> C[Exploratory Analysis<br/>Matplotlib & Seaborn]
+    C --> D[Data Modeling<br/>Power BI]
+    D --> E[Interactive Dashboard<br/>& Insights]
+```
 
-Detect seasonal trends and monthly performance patterns.
+---
 
-Calculate revenue, profit margins, and discount impacts.
+## 🎯 Objectives
 
-Create visual dashboards for quick insights.
+- ✅ Clean and preprocess raw sales data for analysis
+- ✅ Identify top-selling products and categories
+- ✅ Detect seasonal trends and monthly performance patterns
+- ✅ Calculate revenue, profit margins, and discount impacts
+- ✅ Create visual dashboards for quick, actionable insights
 
-🛠️ Tools & Technologies Python: Data cleaning & analysis (Pandas, NumPy)
+---
 
-Power BI: Interactive dashboards & visualizations
+## 🛠️ Tools & Technologies
 
-Excel: Initial data exploration & calculations
+| Category | Tools Used |
+|---|---|
+| **Data Cleaning & Analysis** | Python (Pandas, NumPy) |
+| **Visualization (Python)** | Matplotlib, Seaborn |
+| **Dashboarding** | Power BI |
+| **Initial Exploration** | Microsoft Excel |
 
-Matplotlib & Seaborn: Data visualization in Python
+---
 
-📈 Key Insights Top 5 products contributed to over 40% of total revenue.
+## 📂 Dataset
 
-Sales spiked during festive seasons and holiday months.
+The repository includes multiple real-world sales and finance extracts used across the analysis:
 
-Discounts increased sales volume but reduced profit margins.
+| File | Description |
+|---|---|
+| `Amazon Sale Report.csv` | Core order-level Amazon sales transactions |
+| `Sale Report.csv` | Consolidated internal sales report |
+| `International sale Report.csv` | Cross-border/international order data |
+| `May-2022.csv` | Monthly sales snapshot |
+| `P & L March 2021.csv` | Profit & loss statement |
+| `Expense IIGF.csv` | Business expense records |
+| `Cloud Warehouse Compersion Chart.csv` | Warehouse cost/performance comparison |
+| `Product_details.xlsx` | Product master/reference data |
+| `Amazon Sales Report.pbix` | Power BI dashboard file |
 
-Certain categories showed consistent year-round demand.
+> 📌 Large data files are tracked with **Git LFS** — run `git lfs pull` after cloning to fetch full file contents.
 
-📂 Project Structure bash Copy Edit
+---
 
-Amazon_Sales_Report/
+## 📈 Key Insights & Charts
 
-│── data/ # Raw & cleaned datasets
+- 🏆 **Top 5 products** contributed to **over 40% of total revenue**
+- 📅 **Sales spiked** during **festive seasons and holiday months**
+- 💸 **Discounts increased sales volume** but **reduced profit margins**
+- 🔁 Certain categories showed **consistent, year-round demand**
 
-│── notebooks/ # Jupyter notebooks for analysis
+<table>
+<tr>
+<td width="50%">
 
-│── visuals/ # Charts & graphs generated
+<img src="images/top5_revenue_share.png" alt="Top 5 products revenue share" width="100%"/>
 
-│── dashboard/ # Power BI dashboard file
+</td>
+<td width="50%">
 
-│── README.md # Project documentation
+<img src="images/category_sales_distribution.png" alt="Category-wise sales distribution" width="100%"/>
 
-📊 Dashboard Snapshot Screenshot 2025-08-12 235557
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-Screenshot 2025-08-12 235607 Screenshot 2025-08-12 235614
-🚀 How to Use Clone the repository:
+<img src="images/monthly_sales_trend.png" alt="Monthly sales trend" width="100%"/>
 
-bash Copy Edit git clone https://github.com/ifuriouscoder/Amazon Sales.git
+</td>
+<td width="50%">
 
-View the Power BI .pbix file for the interactive dashboard.
+<img src="images/discount_vs_margin.png" alt="Discount vs profit margin" width="100%"/>
 
-📬 Contact If you have questions, feel free to connect with me on LinkedIn.
+</td>
+</tr>
+</table>
 
-About
-This project analyzes Amazon sales data to extract meaningful insights that can help in business decision-making, sales trend identification, and customer behavior understanding. The analysis focuses on identifying top-performing products, seasonal demand patterns, and sales growth opportunities.
+> ℹ️ The charts above are illustrative visualizations rendered from the analysis patterns; the interactive, data-accurate figures are available in the Power BI dashboard below.
 
-Resources
-Readme
-Activity
-Stars
-0 stars
-Watchers
-0 watching
-Forks
-0 forks
-Report repository
-Releases
-No releases published
-Packages
-No packages published
-Contributors
-1
- (1)
-@i
-Skip to content
-ifuriouscoder
-Amazon-Sales
-Repository navigation
-Code
-Issues
-Pull requests
-Agents
-Actions
-Projects
-Security and quality
-Insights
-ifuriouscoder
-Amazon-Sales
-Public
-Go to file
-t
-T
-ifuriouscoder
-ifuriouscoder
-Initial commit
-aded4a5
- · 
-last year
-Name		
-.gitattributes
-Initial commit
-last year
-Amazon Sale Report.csv
-Initial commit
-last year
-Amazon Sales Report.pbix
-Add files via upload
-last year
-Cloud Warehouse Compersion Chart.csv
-Initial commit
-last year
-Expense IIGF.csv
-Initial commit
-last year
-International sale Report.csv
-Initial commit
-last year
-May-2022.csv
-Initial commit
-last year
-P L March 2021.csv
-Initial commit
-last year
-PDFGallery_20250813_000104.pdf
-Add files via upload
-last year
-Plan for a Powerful Power BI Dashboard.docx
-Add files via upload
-last year
-Product_details.xlsx
-Initial commit
-last year
-README.md
-Update README.md
-last year
-Sale Report.csv
-Initial commit
-last year
-mintty.2025-08-13_03-15-39.png
-Initial commit
-last year
-Repository files navigation
-README
-📊 Amazon Sales Report Analysis
+---
 
-📝 Project Overview This project analyzes Amazon sales data to extract meaningful insights that can help in business decision-making, sales trend identification, and customer behavior understanding. The analysis focuses on identifying top-performing products, seasonal demand patterns, and sales growth opportunities.
+## 📊 Dashboard Snapshot
 
-🎯 Objectives Clean and preprocess raw sales data for analysis.
+<img width="1136" height="675" alt="Dashboard view 1" src="https://github.com/user-attachments/assets/29a9ee67-14a0-4475-ac35-47146644ba52" />
 
-Identify top-selling products and categories.
+<img width="1135" height="675" alt="Dashboard view 2" src="https://github.com/user-attachments/assets/b923d591-66a3-493d-ab7b-2a055142ee70" />
 
-Detect seasonal trends and monthly performance patterns.
+<img width="1920" height="1200" alt="Dashboard view 3" src="https://github.com/user-attachments/assets/0fce85b7-3da3-4aa6-83f0-fb6da690a177" />
 
-Calculate revenue, profit margins, and discount impacts.
+---
 
-Create visual dashboards for quick insights.
+## 📂 Project Structure
 
-🛠️ Tools & Technologies Python: Data cleaning & analysis (Pandas, NumPy)
+```
+Amazon-Sales/
+│
+├── data/                                  # Raw & cleaned datasets
+│   ├── Amazon Sale Report.csv
+│   ├── Sale Report.csv
+│   ├── International sale Report.csv
+│   ├── May-2022.csv
+│   ├── P & L March 2021.csv
+│   ├── Expense IIGF.csv
+│   ├── Cloud Warehouse Compersion Chart.csv
+│   └── Product_details.xlsx
+│
+├── images/                                # Generated charts & graphs
+│   ├── top5_revenue_share.png
+│   ├── monthly_sales_trend.png
+│   ├── category_sales_distribution.png
+│   └── discount_vs_margin.png
+│
+├── dashboard/
+│   └── Amazon Sales Report.pbix           # Power BI dashboard file
+│
+├── docs/
+│   └── Plan for a Powerful Power BI Dashboard.docx
+│
+└── README.md                              # Project documentation
+```
 
-Power BI: Interactive dashboards & visualizations
+---
 
-Excel: Initial data exploration & calculations
+## 🚀 How to Use
 
-Matplotlib & Seaborn: Data visualization in Python
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/pranjalpandey298/Amazon-Sales.git
+   cd Amazon-Sales
+   ```
 
-📈 Key Insights Top 5 products contributed to over 40% of total revenue.
+2. **Pull large files (Git LFS)**
+   ```bash
+   git lfs install
+   git lfs pull
+   ```
 
-Sales spiked during festive seasons and holiday months.
+3. **Explore the data with Python** (optional)
+   ```bash
+   pip install pandas numpy matplotlib seaborn
+   ```
 
-Discounts increased sales volume but reduced profit margins.
+4. **Open the dashboard**
+   Open `Amazon Sales Report.pbix` in **Power BI Desktop** to explore the interactive dashboard.
 
-Certain categories showed consistent year-round demand.
+---
 
-📂 Project Structure bash Copy Edit
+## 🔮 Future Scope
 
-Amazon_Sales_Report/
+- Automate data refresh with a scheduled ETL pipeline
+- Add predictive sales forecasting (e.g., Prophet / ARIMA)
+- Build a customer segmentation (RFM) analysis
+- Deploy the dashboard via Power BI Service for live sharing
 
-│── data/ # Raw & cleaned datasets
+---
 
-│── notebooks/ # Jupyter notebooks for analysis
+## 📬 Contact
 
-│── visuals/ # Charts & graphs generated
+**Pranjal Pandey**
+🔗 GitHub: [@pranjalpandey298](https://github.com/pranjalpandey298)
 
-│── dashboard/ # Power BI dashboard file
+If you have questions or suggestions, feel free to open an issue or connect on GitHub!
 
-│── README.md # Project documentation
+⭐ If you found this project useful, consider giving it a **star**!
 
-📊 Dashboard Snapshot Screenshot 2025-08-12 235557
-
-Screenshot 2025-08-12 235607 Screenshot 2025-08-12 235614
-🚀 How to Use Clone the repository:
-
-bash Copy Edit git clone https://github.com/ifuriouscoder/Amazon Sales.git
-
-View the Power BI .pbix file for the interactive dashboard.
-
-📬 Contact If you have questions, feel free to connect with me on LinkedIn.
-
-About
-This project analyzes Amazon sales data to extract meaningful insights that can help in business decision-making, sales trend identification, and customer behavior understanding. The analysis focuses on identifying top-performing products, seasonal demand patterns, and sales growth opportunities.
-
-Resources
-Readme
-Activity
-Stars
-0 stars
-Watchers
-0 watching
-Forks
-0 forks
-Report repository
-Releases
-No releases published
-Packages
-No packages published
-Contributors
-1
- (1)
-@pranjalpandey298
-
-Footer
-© 2026 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Community
-Docs
-Contact
-Manage cookies
-Do not share my personal information
-
-Footer
-© 2026 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Community
-Docs
-Contact:https://github.com/pranjalpandey298
-Manage cookies
-Do not share my personal information
